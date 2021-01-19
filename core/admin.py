@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Produto, Cliente
+
+admin.site.register(Produto)
+admin.site.register(Cliente)
+
+#necessária a importação de models produto para que seja visível na administração.
